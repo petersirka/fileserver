@@ -1,6 +1,6 @@
 exports.install = function(framework) {
 	framework.route('/', plain_homepage);
-	framework.route('/{name}/', upload_files, ['put', 'upload'], 1024);
+	framework.route('/{name}/', upload_files, ['put', 'upload'], (1024 * 1024) * 20); // 20 MB
 	framework.route('/{name}/{id}/', read_file);
 	framework.route('/{name}/{id}/', remove_file, ['delete']);
 	framework.route('/{name}/info/{id}/', json_file_info);
@@ -18,14 +18,14 @@ function upload_files(name) {
 	var self = this;
 	var length = self.files.length;
 	var storage = self.filestorage(name || 'default');
-	var arr = [];
+	var result = {};
 
 	for (var i = 0; i < length; i++) {
 		var file = self.files[i];
-		arr.push({ id: storage.insert(file.filename, file.path), filename: file.filename, name: file.name });
+		result[file.name] = { id: storage.insert(file.filename, file.path), filename: file.filename };
 	}
 
-	self.json(arr);
+	self.json(result);
 }
 
 function read_file(name, id) {
