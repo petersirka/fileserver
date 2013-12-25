@@ -14,7 +14,7 @@ var definition = (function() {
 		else
 			directory = framework.path.root(utils.path(framework.config.storage) + name + '/');
 
-		if (!fs.exitsSync(directory))
+		if (!fs.existsSync(directory))
 			fs.mkdirSync(directory);
 
 		framework.databases[key] = require('filestorage').create(directory);
