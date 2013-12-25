@@ -13,7 +13,7 @@
 ## Storing files
 
 - files are stored in [project-name] directory
-- each [project-name] directory contains max 1000 files
+- each directory in [project-name] directory contains max 1000 files
 - each file has a small header informations about file (contentType, filename, size/length, width, height)
 
 ## Run
