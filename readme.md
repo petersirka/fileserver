@@ -22,14 +22,14 @@
 
 ```
 $ cd fileserver
-$ node production.js
+$ node release.js
 ```
 
 #### Debug
 
 ```
 $ cd fileserver
-$ node index.js
+$ node debugging.js
 ```
 
 ## Configure FileServer
