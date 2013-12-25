@@ -1,3 +1,3 @@
 var framework = require('partial.js');
 var http = require('http');
-framework.run(http, true);
+framework.run(http, false);

@@ -5,7 +5,7 @@ exports.install = function(framework) {
 	framework.route('/{name}/{id}/', remove_file, ['delete']);
 	framework.route('/{name}/info/{id}/', json_file_info);
 	framework.route('/{name}/listing/', json_listing);
-	framework.route('/{name}/count/', json_count);
+	framework.route('/{name}/count/', json_count);	
 };
 
 function plain_homepage() {

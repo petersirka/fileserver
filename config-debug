@@ -1,3 +1,10 @@
-name			: FileServer
-version			: 1.01
-author			: Peter Širka
+default-ip          : 127.0.0.1
+default-port        : 8888
+name                : FileServer
+version             : 1.01
+author              : Peter Širka
+
+// out of fileserver directory ~/users/filestorage/
+// IMPORTANT: directory must exist and must have READ/WRITE permission
+
+storage             : /filestorage/
