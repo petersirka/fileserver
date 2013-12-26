@@ -3,6 +3,7 @@ var names = {};
 
 exports.install = function(framework) {
 	framework.route('/', plain_homepage);
+	framework.route('/availability/', json_availability);
 	framework.route('/{name}/', upload_files, ['put', 'upload'], (1024 * 1024) * 20); // 20 MB
 	framework.route('/{name}/{id}/', read_file);
 	framework.route('/{name}/{id}/', remove_file, ['delete']);
@@ -94,6 +95,11 @@ function json_listing(name) {
 
 		self.plain(arr);
 	});
+}
+
+function json_availability() {
+	var self= this;
+	self.json({ available: true });
 }
 
 function json_count(name) {
