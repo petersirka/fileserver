@@ -44,7 +44,7 @@ function upload_files(name) {
 
 	for (var i = 0; i < length; i++) {
 		var file = self.files[i];
-		result[file.name] = { id: storage.insert(file.filename, file.path), filename: file.filename };
+		result[file.name] = { id: storage.insert(file.filename, file.path), filename: file.filename, length: file.length, width: file.width, height: file.height, contentType: file.contentType };
 		stats.upload++;
 	}
 
