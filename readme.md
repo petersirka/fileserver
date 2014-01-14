@@ -2,11 +2,11 @@
 
 ![FileServer works](http://www.858project.com/img/fileserver.png)
 
-> Download [partial.js module FileServer](https://github.com/petersirka/partial.js-modules/tree/master/fileserver)
+> Download [total.js module FileServer](https://github.com/petersirka/total.js-modules/tree/master/fileserver)
 
 - Download FileServer from GitHub
 - Run on your server
-- Connect from your partial.js project via [FileServer module](https://github.com/petersirka/partial.js-modules/tree/master/fileserver)
+- Connect from your total.js project via [FileServer module](https://github.com/petersirka/total.js-modules/tree/master/fileserver)
 - You will be happy
 - Supports: multiple upload, multiple remove
 
@@ -42,4 +42,4 @@ $ sudo nano config-release
 
 ## Using
 
-FileServer can use in partial.js projects. Easy implementation via module: [partial.js - FileServer module](https://github.com/petersirka/partial.js-modules/tree/master/fileserver).
+FileServer can use in total.js projects. Easy implementation via module: [total.js - FileServer module](https://github.com/petersirka/total.js-modules/tree/master/fileserver).
