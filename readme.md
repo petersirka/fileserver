@@ -7,8 +7,9 @@
 - Download FileServer from GitHub
 - Run on your server
 - Connect from your total.js project via [FileServer module](https://github.com/petersirka/total.js-modules/tree/master/fileserver)
-- You will be happy
 - Supports: multiple upload, multiple remove
+- Path is configurable
+- You will be happy
 
 ## Storing files
 
