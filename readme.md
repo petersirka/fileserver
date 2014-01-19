@@ -1,6 +1,6 @@
 # FileServer
 
-![FileServer works](http://www.858project.com/img/fileserver.png)
+![FileServer works](http://www.858project.com/img/fileserver.png?new=1)
 
 > Download [total.js module FileServer](https://github.com/petersirka/total.js-modules/tree/master/fileserver)
 
